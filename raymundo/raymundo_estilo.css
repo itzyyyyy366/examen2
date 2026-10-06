@@ -1,0 +1,134 @@
+:root {
+    --fondo: #FAF9F6;
+    --texto: #2D2D2D;
+    --acento: #5C6B73;
+    --bordes: #E0E0E0;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    max-width: 700px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid var(--bordes);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: var(--acento);
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+}
+
+header p {
+    margin: 0;
+    color: var(--texto);
+    opacity: 0.8;
+}
+
+.seccion-contenido {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: var(--texto);
+    margin-bottom: 20px;
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: var(--fondo);
+    border: 1px solid var(--acento);
+    color: var(--acento);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta-item {
+    background-color: #ffffff;
+    border: 1px solid var(--bordes);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--acento);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--bordes);
+}
+
+.info-item {
+    padding: 15px;
+    text-align: center;
+}
+
+.info-item p {
+    margin: 0 0 8px 0;
+    color: var(--acento);
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.descripcion {
+    font-size: 0.85em;
+    color: var(--texto);
+    opacity: 0.8;
+    display: block;
+    line-height: 1.4;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-volver {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--fondo);
+    background-color: var(--acento);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.btn-volver:hover {
+    opacity: 0.8;
+}
